@@ -27,9 +27,13 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  display: inline-block;
+  display: flex;
   position: relative;
 }
+li.nav-item {
+  align-content: center;
+}
+
 .nav-link::after {
   content: "";
   position: absolute;
