@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University of Cabuyao</title>
+    <!--* ADDED PNC Icon  -->
+    <link rel="shortcut icon" href="PNC_Icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
     <link href="style.css" rel="stylesheet" />
     <script defer src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
@@ -13,10 +15,11 @@
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top nav">
       <div class="container">
+        <!--* RESIZED THE PNC Logo  -->
         <a class="navbar-brand" href="index.html">
           <img
             class="university-logo"
-            src="pnc-header_RESIZED_1_removebg.png"
+            src="pnc-header_RESIZED_2.png"
             alt="University of Cabuyao Logo"
           />
         </a>
@@ -31,11 +34,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!--TODO: Temporarily put a border to pinpoint the code  -->
         <div
-          class="collapse navbar-collapse justify-content-en"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
-          style="border: 2px solid"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -55,48 +56,31 @@
       </div>
     </nav>
 
-    <!-- Carousel Slide -->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('bg1.jpg')">
+        <h2>Welcome to University of Cabuyao</h2>
+        <p>A premier institution for higher learning</p>
+        <button class="btn btn-warning">Learn More</button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item" data-bs-interval="7000">
-          <img src="./bg1.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption c-cap top-0 mt-4 ">
-            <p class="mt-5 fs-3 text-uppercase">A premier institution for higher learning</p>            
-            <h2 class="display-1 fw-bolder text-capitalize">Welcome to University of Cabuyao</h2>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Learn More</button>
-          </div>
-        </div>
-        <div class="carousel-item c-item" data-bs-interval="7000">
-          <img src="./bg2.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption c-cap top-0 mt-4 ">
-            <p class="mt-5 fs-3 text-uppercase">Nurturing future leaders since 1985</p>            
-            <h2 class="display-1 fw-bolder text-capitalize">Excellence in Education</h2>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Learn More</button>
-          </div>
-        </div>
-        <div class="carousel-item c-item" data-bs-interval="7000">
-          <img src="./bg3.jpg" class="d-block w-100 c-img" alt="...">
-          <div class="carousel-caption c-cap top-0 mt-4 ">
-            <p class="mt-5 fs-3 text-uppercase">Be part of our growing academic community</p>            
-            <h2 class="display-1 fw-bolder text-capitalize">Enroll Now for SY 2025-2026</h2>
-            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Learn More</button>
-          </div>
-        </div>
+      <div class="hero-slide" style="background-image: url('bg2.jpg')">
+        <h2>Excellence in Education</h2>
+        <p>Nurturing future leaders since 1985</p>
+        <button class="btn btn-warning">Learn More</button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="hero-slide" style="background-image: url('bg3.jpg')">
+        <h2>Enroll Now for SY 2025-2026</h2>
+        <p>Be part of our growing academic community</p>
+        <button class="btn btn-warning">Learn More</button>
+      </div>
+      <div
+        class="position-absolute bottom-0 start-50 translate-middle-x mb-3 d-flex gap-2"
+      >
+        <button class="btn btn-sm btn-light rounded-circle p-2"></button>
+        <button class="btn btn-sm btn-light rounded-circle p-2"></button>
+        <button class="btn btn-sm btn-light rounded-circle p-2"></button>
+      </div>
+    </section>
 
     <!-- Quick Links -->
     <section class="py-5 bg-white quick-links">
