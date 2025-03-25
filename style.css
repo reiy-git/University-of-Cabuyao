@@ -11,14 +11,12 @@ body {
 .navbar-custom {
   background-color: #438d55;
 }
-/** Set up a proper width for the PNC Logo */
 .navbar-brand {
   width: 75%;
 }
 .university-logo {
   width: 100%;
 }
-
 .navbar-nav {
   width: 500px;
   display: flex;
@@ -32,7 +30,6 @@ body {
   display: inline-block;
   position: relative;
 }
-/** ADDED An effect for the navbar choices  */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -43,37 +40,8 @@ body {
   background: white;
   transition: 0.4s;
 }
-
 .nav-link:hover::after {
   width: 100%;
-}
-
-.hero-slider {
-  margin-top: 8%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10%;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  background-position: center;
-}
-.hero-slide.active {
-  opacity: 1;
 }
 .quick-links .card {
   transition: transform 0.3s ease;
